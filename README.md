@@ -24,5 +24,5 @@ You can find your unique Place ID by searching for your business’s name in [Go
 ## Usage
 
 To display the opening hours on a WordPress page using Elementor:
-1. Add an HTML widget in Elementor where you want the opening hours to appear.
+1. Add a Shortcode widget in Elementor or WordPress Editor where you want the opening hours to appear.
 2. Use the shortcode `[display_opening_hours]`.
