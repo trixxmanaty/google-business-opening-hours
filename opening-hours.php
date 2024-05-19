@@ -49,8 +49,11 @@ function display_opening_hours_shortcode() {
                 $date = date('d F, Y', strtotime("next week " . strtolower($weekdays[$index]), strtotime($current_date)));
             }
 
+            // Remove the redundant day label
+            $day_hours_cleaned = str_replace($weekdays[$index] . ': ', '', $day_hours);
+
             // Highlight the current day
-            $day_display = $weekdays[$index] . " (" . $date . "): " . $day_hours;
+            $day_display = $weekdays[$index] . " (" . $date . "): " . $day_hours_cleaned;
             if ($index + 1 == $current_day_of_week) {
                 $day_display = "<strong>$day_display</strong>";
             }
